@@ -1,6 +1,6 @@
 # 工程详情
 
-## url
+## URI
 
 ```
 /project/detail
@@ -9,7 +9,7 @@
 ## 请求方式
 
 ```
-post
+GET
 ```
 
 ## 包头

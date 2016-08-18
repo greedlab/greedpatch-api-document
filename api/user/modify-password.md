@@ -2,7 +2,7 @@
 
 修改密码后要让当前 token 失效，并重新生成 token
 
-## url
+## URI
 
 ```
 /user/modify-password

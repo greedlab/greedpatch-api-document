@@ -1,6 +1,6 @@
 # 注册
 
-## url
+## URI
 
 ```
 /user/register

@@ -1,6 +1,6 @@
 # 更新工程
 
-## url
+## URI
 
 ```
 /project/update

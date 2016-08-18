@@ -2,7 +2,7 @@
 
 发送重置密码链接到邮箱。后端生成新的 token，重置密码链接为 `<front >/user/set-password?token=<token>`
 
-## url
+## URI
 
 ```
 /user/reset-password

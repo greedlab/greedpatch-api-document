@@ -1,6 +1,6 @@
 # 工程添加成员
 
-## url
+## URI
 
 ```
 /project/member-add

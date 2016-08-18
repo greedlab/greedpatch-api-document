@@ -8,8 +8,10 @@
 
 发送端（客户端）希望接受的数据类型
 
+* 参考 <http://www.informit.com/articles/article.aspx?p=1566460>
+
 ```
-Accept: application/greedpatch.greedlab.v1+json
+Accept: application/vnd.greedlab+json;version=v1.0
 ```
 
 ### Content-Type

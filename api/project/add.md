@@ -1,6 +1,6 @@
 # 添加工程
 
-## url
+## URI
 
 ```
 /project/add

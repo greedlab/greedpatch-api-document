@@ -1,6 +1,6 @@
 # 登录
 
-## url
+## URI
 
 ```
 /user/login

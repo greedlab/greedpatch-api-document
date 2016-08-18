@@ -1,6 +1,6 @@
 # 工程成员列表
 
-## url
+## URI
 
 ```
 /project/members

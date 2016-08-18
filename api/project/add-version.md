@@ -1,6 +1,6 @@
 # 工程添加版本
 
-## url
+## URI
 
 ```
 /project/add-version
