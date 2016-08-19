@@ -1,16 +1,17 @@
-# 删除 token
+# 更新用户状态
 
+只有管理员可以
 
 ## URI
 
 ```
-/tokens/:id
+/users/:id/status
 ```
 
 ## 请求方式
 
 ```
-DELETE
+POST
 ```
 
 ## 包头
@@ -23,7 +24,8 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
-| :id | string | 是 | token ID |  |
+| :id | string | 是 | 用户 ID |  |
+| status | int | 是 | 更新后的状态 | [详细说明](../table/user.md#status) |
 
 ## 成功
 
@@ -39,10 +41,11 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 400 | id 不能为空 |  |
+| 400 | 请求参数错误 |  |
 | 401 | token 失效 |  |
-| 403 | 无权限访问id |  |
-| 500 | 服务器内部错误 |  |  
+| 403 | 无权限修改用户状态 |  |
+| 404 | 用户不存在 |  |
+| 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例
 

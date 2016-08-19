@@ -1,9 +1,9 @@
-# 工程详情
+# 获取工程详情
 
 ## URI
 
 ```
-/project/detail
+/projects/:id
 ```
 
 ## 请求方式
@@ -22,35 +22,50 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| id | string | 是 | 工程 ID |  |  |
+| :id | string | 是 | 工程 ID |  |  |
 
-## 成功返回数据
+## 成功
+
+### 成功返回状态码
+
+| 状态码 | 说明 | 备注 |
+| --- | --- | --- |
+| 200 |  获取成功 | |
+
+### 成功返回数据
 
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | id | string | 工程 ID |  |
+| bundle_id | string | 是 | 应用标识符 |  |  |
 | name | string | 工程名称 |  |
 | introduction | string | 工程介绍 |  |
+| timestamp | int | 创建时间 |  |
 
 ### 成功返回数据实例
 
 ```json
 {
   "id": "FDSF32423",
+  "bundle_id": "com.greedlab.greedpatch",
   "name": "project name",
-  "Introduction": "project Introduction"
+  "Introduction": "project Introduction",
+  "timestamp": 437281732
 }
 ```
 
-## 出错返回数据
+## 失败
 
-| 状态码 | 状态信息 | 说明 | 备注 |
-| --- | --- | --- | --- |
-| 401 | token 失效 |  |  |
-| 422 | 工程不存在 |  |  |
-| 500 | 服务器内部错误 |  |  |
+### 失败返回数据
 
-### 出错返回数据实例
+| 状态码 |  说明 | 备注 |
+| --- | --- | --- |
+| 401 | token 失效 |  |  
+| 403 | 无权限访问工程 |  
+| 422 | 工程不存在 |  |  
+| 500 | 服务器内部错误 |  |  
+
+### 失败返回数据实例
 
 ```json
 {

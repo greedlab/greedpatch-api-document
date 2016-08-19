@@ -6,12 +6,12 @@
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| _id | string | ID |  |  |
+| id | string | ID |  |  |
 | email | string | 邮箱 |  | greedpatch@greedlab.com |
 | status | int | 状态 | [详细说明](#status) | 0 |
 | role | int | 角色 | [详细说明](#role) | 0 |
 | password | string | 密码 | 加密后的 |  |
-| timestamp | string | 添加时间戳 | 精确到秒 | 1471499261 |
+| timestamp | string | 创建时间戳 | 精确到秒 | 1471499261 |
 
 ### status
 

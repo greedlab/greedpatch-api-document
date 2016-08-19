@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | _id | string | ID |  |  |
 | version | string | 补丁版本号 |  |  |
-| project_id | string | 补丁所在工程 ID |  |  |
+| bundle_id | string | bundle id | unequal | com.greedlab.greedpatch |
 | project_version | string | 补丁所在工程版本号 |  |  |
 | hash | string | Hash 值 |  |  |
 | patch_url | string | 补丁下载地址 |  |  |
