@@ -1,11 +1,11 @@
-# 用户信息
+# 获取自己的信息
 
 后台根据 token 获取 userID
 
 ## URI
 
 ```
-/profile
+/users/my/profile
 ```
 
 ## 请求方式

@@ -3,7 +3,7 @@
 ## URI
 
 ```
-/projects/:id/member
+/projects/:id/members/:email
 ```
 
 ## 请求方式
@@ -23,7 +23,7 @@ Authorization: Bearer <token>
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
 | :id | string | 是 | 工程 ID |  |  |
-| email | string | 是 | 邮箱 |  |  |
+| :email | string | 是 | 邮箱 |  |  |
 
 ## 成功
 
@@ -31,15 +31,7 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 200 | 删除成功 | 不管有没有对应的 email 都返回成功 |
-
-### 成功返回数据实例
-
-```json
-{
-  "message": "删除成功"
-}
-```
+| 204 | 删除成功 | 不管有没有对应的 email 都返回成功 |
 
 ## 失败
 

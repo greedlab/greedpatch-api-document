@@ -1,11 +1,11 @@
-# 修改密码
+# 修改自己的密码
 
 修改密码后要让当前 token 失效，并重新生成 token
 
 ## URI
 
 ```
-/modify-password
+/modify-my-password
 ```
 
 ## 请求方式

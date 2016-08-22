@@ -1,6 +1,6 @@
 # 列出所有用户生成的 token
 
-只列出从设置界面生成 token
+只列出从设置界面生成 token，需要输入用户密码
 
 * [有翻页](../README.md#翻页)
 
@@ -26,7 +26,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
-| password | string | 是 | 密码 |  |
+| password | string | 是 | 用户密码 |  |
 
 ## 成功
 

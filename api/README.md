@@ -74,12 +74,12 @@ Authorization: Bearer <token>
 
 ## Method
 
-| method | SQL命令 | 是否幂等 | 说明 |
+| method | SQL命令 | 是否幂等 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | GET | SELECT | 是 | 从服务器取出资源 |
 | POST | CREATE | 否 | 在服务器新建一个资源 |
 | PUT | UPDATE | 是 | 在服务器更新资源（客户端提供改变后的完整资源）|
-| PATCH | UPDATE | 是 | 在服务器更新资源（客户端提供改变的属性）|
+| PATCH | UPDATE | 是 | 在服务器更新资源（客户端提供改变的属性）| 需要 WebDAV 支持，最好不用 |
 | DELETE | DELETE | 是 | 从服务器删除资源 |
 
 ### 返回结果

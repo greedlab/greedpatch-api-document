@@ -7,7 +7,7 @@
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
 | type | int | 权限类型 | [详细说明](#type) |  0 |
-| status | int | 权限 | [详细说明](#status) | 0 |
+| permission | int | 权限 | [详细说明](#permission) | 0 |
 | domains | array | 限定的邮箱域名 | status=2 时有效 | [greedlab.com] |
 
 ### type
@@ -19,7 +19,7 @@ unequal
 | 0 | register（默认） |
 | 1 | login |
 
-### status
+### permission
 
 | value | 说明 |
 | --- | --- |

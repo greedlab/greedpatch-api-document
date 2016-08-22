@@ -1,11 +1,11 @@
-# 重置密码
+# 重置自己的密码
 
 发送重置密码链接到邮箱。后端生成新的 token，重置密码链接为 `<front >/user/set-password?token=<token>`
 
 ## URI
 
 ```
-/reset-password
+/reset-my-password
 ```
 
 ## 请求方式
