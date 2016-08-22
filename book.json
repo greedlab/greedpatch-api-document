@@ -1,0 +1,40 @@
+{
+    "gitbook": "2.x.x" ,
+    "title": "greedpatch's document",
+    "author" : "Bell",
+    "generator": "site",
+    "language" : "zh-hans",
+    "plugins": [
+        "sharing",
+        "github",
+        "-search",
+        "search-pro",
+        "mermaid",
+        "duoshuo"
+        ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/greedlab/greedpatch-document"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["搜索"]
+        },
+        "sharing": {
+            "facebook": false,
+            "twitter": false,
+            "google": false,
+            "weibo": false,
+            "instapaper": false,
+            "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper"
+            ]
+        },
+        "duoshuo": {
+            "short_name": "bellblog",
+            "theme": "default"
+        }
+    }
+}

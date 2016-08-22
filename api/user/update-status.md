@@ -25,7 +25,7 @@ Authorization: Bearer <token>
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
 | :id | string | 是 | 用户 ID |  |
-| status | int | 是 | 更新后的状态 | [详细说明](../table/user.md#status) |
+| status | int | 是 | 更新后的状态 | [详细说明](../../table/user.md#status) |
 
 ## 成功
 

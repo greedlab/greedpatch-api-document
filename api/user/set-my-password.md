@@ -39,7 +39,7 @@ Authorization: Bearer <token>
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | token | string | 访问令牌 |  |
-| role | int | 角色 | [详细说明](/table/user.md#role) |
+| role | int | 角色 | [详细说明](../../table/user.md#role) |
 
 ### 成功返回数据实例
 

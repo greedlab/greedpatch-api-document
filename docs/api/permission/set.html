@@ -1,0 +1,871 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>设置权限 | greedpatch&#39;s document</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="Bell">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../api/project/add.html" />
+    
+    
+    <link rel="prev" href="../../api/permission/get.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.2.2"
+        data-chapter-title="设置权限"
+        data-filepath="api/permission/set.md"
+        data-basepath="../.."
+        data-revision="Mon Aug 22 2016 17:46:57 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="api/index.html">
+            
+                
+                    <a href="../../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        接口文档
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" >
+            
+            <span><b>1.1.</b> patch</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="api/patch/add.html">
+            
+                
+                    <a href="../../api/patch/add.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        添加补丁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="api/patch/check.html">
+            
+                
+                    <a href="../../api/patch/check.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        检查是否有补丁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="api/patch/get.html">
+            
+                
+                    <a href="../../api/patch/get.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        补丁详情
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+            <span><b>1.2.</b> permission</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="api/permission/get.html">
+            
+                
+                    <a href="../../api/permission/get.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                        获取权限
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="api/permission/set.html">
+            
+                
+                    <a href="../../api/permission/set.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                        设置权限
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+            <span><b>1.3.</b> project</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="api/project/add.html">
+            
+                
+                    <a href="../../api/project/add.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.1.</b>
+                        
+                        添加工程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="api/project/del.html">
+            
+                
+                    <a href="../../api/project/del.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.2.</b>
+                        
+                        工程添加成员
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="api/project/detail.html">
+            
+                
+                    <a href="../../api/project/detail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.3.</b>
+                        
+                        获取工程详情
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="api/project/list-all.html">
+            
+                
+                    <a href="../../api/project/list-all.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.4.</b>
+                        
+                        获取所有工程列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="api/project/list-my.html">
+            
+                
+                    <a href="../../api/project/list-my.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.5.</b>
+                        
+                        获取我的工程列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="api/project/member-add.html">
+            
+                
+                    <a href="../../api/project/member-add.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.6.</b>
+                        
+                        工程添加成员
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="api/project/member-list.html">
+            
+                
+                    <a href="../../api/project/member-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.7.</b>
+                        
+                        工程成员列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="api/project/patch-list.html">
+            
+                
+                    <a href="../../api/project/patch-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.8.</b>
+                        
+                        获取工程下的补丁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="api/project/project-del.html">
+            
+                
+                    <a href="../../api/project/project-del.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.9.</b>
+                        
+                        删除工程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="api/project/update.html">
+            
+                
+                    <a href="../../api/project/update.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.10.</b>
+                        
+                        更新工程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+            <span><b>1.4.</b> token</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="api/token/del.html">
+            
+                
+                    <a href="../../api/token/del.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        删除 token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="api/token/generate.html">
+            
+                
+                    <a href="../../api/token/generate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        生成 token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="api/token/list.html">
+            
+                
+                    <a href="../../api/token/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                        列出所有用户生成的 token
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+            <span><b>1.5.</b> user</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="api/user/list.html">
+            
+                
+                    <a href="../../api/user/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        列出所有用户
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="api/user/login.html">
+            
+                
+                    <a href="../../api/user/login.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="api/user/modify-my-password.html">
+            
+                
+                    <a href="../../api/user/modify-my-password.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.3.</b>
+                        
+                        修改自己的密码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="api/user/profile-my.html">
+            
+                
+                    <a href="../../api/user/profile-my.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.4.</b>
+                        
+                        获取自己的信息
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="api/user/register.html">
+            
+                
+                    <a href="../../api/user/register.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.5.</b>
+                        
+                        注册
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="api/user/reset-my-password.html">
+            
+                
+                    <a href="../../api/user/reset-my-password.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.6.</b>
+                        
+                        重置自己的密码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="api/user/set-my-password.html">
+            
+                
+                    <a href="../../api/user/set-my-password.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.7.</b>
+                        
+                        设置自己的密码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="api/user/update-password.html">
+            
+                
+                    <a href="../../api/user/update-password.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.8.</b>
+                        
+                        管理员修改用户密码
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="api/user/update-status.html">
+            
+                
+                    <a href="../../api/user/update-status.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.9.</b>
+                        
+                        管理员修改用户状态
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="table/index.html">
+            
+                
+                    <a href="../../table/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        数据库表结构
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="table/patch.html">
+            
+                
+                    <a href="../../table/patch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        patch
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="table/permission.html">
+            
+                
+                    <a href="../../table/permission.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        permission
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="table/project.html">
+            
+                
+                    <a href="../../table/project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        project
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="table/token.html">
+            
+                
+                    <a href="../../table/token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="table/unvalid-token.html">
+            
+                
+                    <a href="../../table/unvalid-token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        unvalid-token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="table/user.html">
+            
+                
+                    <a href="../../table/user.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        user
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >greedpatch&#39;s document</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8BBE;&#x7F6E;&#x6743;&#x9650;">&#x8BBE;&#x7F6E;&#x6743;&#x9650;</h1>
+<p>&#x53EA;&#x6709;&#x7BA1;&#x7406;&#x5458;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;</p>
+<h2 id="uri">URI</h2>
+<pre><code>/permissions/:type
+</code></pre><h2 id="&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;">&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;</h2>
+<pre><code>PUT
+</code></pre><h2 id="&#x5305;&#x5934;">&#x5305;&#x5934;</h2>
+<pre><code>Authorization: Bearer &lt;token&gt;
+</code></pre><h2 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x5907;&#x6CE8;</th>
+<th>&#x4F8B;&#x5B50;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:type</td>
+<td>int</td>
+<td>&#x662F;</td>
+<td>&#x6743;&#x9650;&#x7C7B;&#x578B;</td>
+<td><a href="../../table/permission.html#type">&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>permission</td>
+<td>int</td>
+<td>&#x662F;</td>
+<td>&#x6743;&#x9650;</td>
+<td><a href="../../table/permission.html#permission">&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;</a></td>
+<td>0</td>
+</tr>
+<tr>
+<td>domains</td>
+<td>array</td>
+<td>&#x5426;</td>
+<td>&#x9650;&#x5B9A;&#x7684;&#x90AE;&#x7BB1;&#x57DF;&#x540D;</td>
+<td>status=2 &#x65F6;&#x6709;&#x6548;</td>
+<td>[greedlab.com]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6210;&#x529F;">&#x6210;&#x529F;</h2>
+<h3 id="&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;">&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x72B6;&#x6001;&#x7801;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>204</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5931;&#x8D25;">&#x5931;&#x8D25;</h2>
+<h3 id="&#x5931;&#x8D25;&#x8FD4;&#x56DE;&#x6570;&#x636E;">&#x5931;&#x8D25;&#x8FD4;&#x56DE;&#x6570;&#x636E;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x72B6;&#x6001;&#x7801;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>token &#x5931;&#x6548;</td>
+<td></td>
+</tr>
+<tr>
+<td>403</td>
+<td>&#x65E0;&#x6743;&#x9650;</td>
+</tr>
+<tr>
+<td>422</td>
+<td>type&#x4E0D;&#x5B58;&#x5728;</td>
+<td></td>
+</tr>
+<tr>
+<td>500</td>
+<td>&#x670D;&#x52A1;&#x5668;&#x5185;&#x90E8;&#x9519;&#x8BEF;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5931;&#x8D25;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x5B9E;&#x4F8B;">&#x5931;&#x8D25;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x5B9E;&#x4F8B;</h3>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x65E0;&#x6743;&#x9650;&quot;</span>
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../api/permission/get.html" class="navigation navigation-prev " aria-label="Previous page: 获取权限"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../api/project/add.html" class="navigation navigation-next " aria-label="Next page: 添加工程"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-duoshuo/duoshuo.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"github":{"url":"https://github.com/greedlab/greedpatch-document"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["搜索"]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"duoshuo":{"short_name":"bellblog","theme":"default"},"mermaid":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

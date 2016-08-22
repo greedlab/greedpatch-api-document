@@ -36,8 +36,8 @@ Authorization: Bearer <token>
 | --- | --- | --- | --- |
 | id | string | ID |  |  |
 | email | string | 邮箱 |  | greedpatch@greedlab.com |
-| status | int | 状态 | [详细说明](../table/user.md#status) | 0 |
-| role | int | 角色 | [详细说明](../table/user.md#role) | 0 |
+| status | int | 状态 | [详细说明](../../table/user.md#status) | 0 |
+| role | int | 角色 | [详细说明](../../table/user.md#role) | 0 |
 | timestamp | string | 创建时间戳 | 精确到秒 | 1471499261 |
 
 ### 成功返回数据实例

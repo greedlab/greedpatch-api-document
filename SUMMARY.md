@@ -1,14 +1,14 @@
 # GreedPatch Document
 
-* [接口文档](/api)
-    * [patch](/api/patch)
+* [接口文档](/api/README.md)
+    * patch
         * [添加补丁](/api/patch/add.md)
         * [检查是否有补丁](/api/patch/check.md)
         * [补丁详情](/api/patch/get.md)
-    * [permission](/api/permission)
+    * permission
         * [获取权限](/api/permission/get.md)
         * [设置权限](/api/permission/set.md)
-    * [project](/api/project)
+    * project
         * [添加工程](/api/project/add.md)
         * [工程添加成员](/api/project/del.md)
         * [获取工程详情](/api/project/detail.md)
@@ -19,11 +19,11 @@
         * [获取工程下的补丁](/api/project/patch-list.md)
         * [删除工程](/api/project/project-del.md)
         * [更新工程](/api/project/update.md)
-    * [token](/api/token)
+    * token
         * [删除 token](/api/token/del.md)
         * [生成 token](/api/token/generate.md)
         * [列出所有用户生成的 token](/api/token/list.md)
-    * [user](/api/user)
+    * user
         * [列出所有用户](/api/user/list.md)
         * [登录](/api/user/login.md)
         * [修改自己的密码](/api/user/modify-my-password.md)
@@ -33,7 +33,7 @@
         * [设置自己的密码](/api/user/set-my-password.md)
         * [管理员修改用户密码](/api/user/update-password.md)
         * [管理员修改用户状态](/api/user/update-status.md)
-* [数据库表结构](/table)
+* [数据库表结构](/table/README.md)
     * [patch](/table/patch.md)
     * [permission](/table/permission.md)
     * [project](/table/project.md)

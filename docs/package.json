@@ -1,0 +1,34 @@
+{
+  "name": "greedpatch-document",
+  "version": "1.0.0",
+  "description": "document for greedpatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greedlab/greedpatch-document.git"
+  },
+  "keywords": [
+    "greedpatch",
+    "patch",
+    "greed",
+    "document"
+  ],
+  "author": "Bell <bell@greedlab.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greedlab/greedpatch-document/issues"
+  },
+  "homepage": "https://github.com/greedlab/greedpatch-document#readme",
+  "devDependencies": {
+    "gitbook-plugin-duoshuo": "^1.6.3",
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-highlight": "^2.0.2",
+    "gitbook-plugin-mermaid": "0.0.9",
+    "gitbook-plugin-search-pro": "^1.0.9",
+    "gitbook-plugin-sharing": "^1.0.2"
+  }
+}
