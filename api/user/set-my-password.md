@@ -39,14 +39,16 @@ Authorization: Bearer <token>
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | token | string | 访问令牌 |  |
-| role | int | 角色 | [详细说明](../../table/user.md#role) |
+| user | object | 无密码的用户信息 | [详细说明](../../table/user.md) |
 
 ### 成功返回数据实例
 
 ```json
 {
   "token": "IFEI.rewqri.423jkdsf",
-  "role" : 0
+  "user" : {
+
+  }
 }
 ```
 
@@ -57,6 +59,7 @@ Authorization: Bearer <token>
 | 状态码 | 状态信息 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | 401 | token 失效 |  |  |
+| 403 | token 权限不够 |  |  |
 | 500 | 服务器内部错误 |  |  |
 
 ### 出错返回数据实例

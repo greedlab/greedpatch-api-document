@@ -13,7 +13,7 @@
 ## 请求方式
 
 ```
-GET
+POST
 ```
 
 ## 包头
@@ -26,6 +26,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
+| type | int | 否 | 类型 | 默认设 1 |
 | password | string | 是 | 用户密码 |  |
 
 ## 成功

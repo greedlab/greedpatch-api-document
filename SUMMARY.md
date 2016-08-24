@@ -26,10 +26,11 @@
     * user
         * [列出所有用户](/api/user/list.md)
         * [登录](/api/user/login.md)
+        * [注销](/api/user/logout.md)
         * [修改自己的密码](/api/user/modify-my-password.md)
-        * [获取自己的信息](/api/user/profile-my.md)
+        * [获取自己的信息](/api/user/my-profile.md)
         * [注册](/api/user/register.md)
-        * [重置自己的密码](/api/user/reset-my-password.md)
+        * [重置自己的密码](/api/user/reset-password.md)
         * [设置自己的密码](/api/user/set-my-password.md)
         * [管理员修改用户密码](/api/user/update-password.md)
         * [管理员修改用户状态](/api/user/update-status.md)

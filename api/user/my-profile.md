@@ -26,23 +26,7 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 200 |  获取成功 | |
-
-### 成功返回数据
-
-| key | 类型 | 说明 | 备注 |
-| --- | --- | --- | --- |
-| id | string | 用户 ID |  |
-| email | string | 用户邮箱 |  |
-
-### 成功返回数据实例
-
-```json
-{
-  "id": "FDSF32423",
-  "email": "greedpatch@greedlab.com"
-}
-```
+| 200 |  获取成功 | 返回无密码的 [User](../../table/user.md) |
 
 ## 失败
 

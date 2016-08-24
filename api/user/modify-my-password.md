@@ -33,21 +33,23 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 200 | 登录成功 |  |
+| 200 | 成功 |  |
 
 ### 成功返回数据
 
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
-| token | string | 邮箱 |  |
-| role | int | 角色 | [详细说明](../../table/user.md#role) |
+| token | string |  |  |
+| user | object | 无密码的用户信息 | [详细说明](../../table/user.md) |
 
 ### 成功返回数据实例
 
 ```json
 {
   "token": "IFEI.rewqri.423jkdsf",
-  "role" : 0
+  "user" : {
+
+  }
 }
 ```
 

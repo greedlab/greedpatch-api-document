@@ -42,7 +42,6 @@ Authorization: Bearer <token>
 | name | string | 名称 | |
 | token | string | token |  |
 | type | int | 类型 | 1 |
-| timestamp | string | 添加时间戳 | 精确到秒 |
 
 ### 成功返回数据实例
 
@@ -51,8 +50,7 @@ Authorization: Bearer <token>
   "id": "FDSF32423",
   "name": "token name",
   "token": "FDSK*2432.dsfi32.sdfaio32",
-  "type": 1,
-  "timestamp": 437281732
+  "type": 1
 }
 ```
 

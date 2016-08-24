@@ -72,6 +72,53 @@ Accept-Language: en,zh
 Authorization: Bearer <token>
 ```
 
+#### JWT
+
+##### Header 头部
+
+> 定义加密方式
+
+JWS SHA-256
+
+eg:
+
+```json
+{
+  "typ":"JWT",
+  "alg":"HS256"
+ }
+```
+
+##### Payload 载荷
+
+###### 参数
+
+| key | 说明 | 备注 |
+| --- | --- | --- |
+| iat | token 发布时间 | 单位/毫秒 |
+| exp | token 有效期 | 单位/毫秒 |
+| id | 用户 ID | |
+| scope | token 权限 | [详细说明](#scope) |
+
+####### scope
+
+| key | 说明 | 有效期 | 备注 |
+| --- | --- | --- |
+| default | 除`/set-my-password`外的所有权限 |  24 小时 |
+| all | 所有权限 | 30 天 |
+| patch:check | 检测是否有新补丁权限 | 永久 |
+
+###### 实例
+
+```json
+{
+  "iat": 1441593502,
+  "exp": 1441594722,
+  "id": "KDFwie213",
+  "scope": "patch:check"
+}
+```
+
 ## Method
 
 | method | SQL命令 | 是否幂等 | 说明 | 备注 |
