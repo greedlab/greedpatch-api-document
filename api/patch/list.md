@@ -1,11 +1,12 @@
 # 获取工程下的补丁
 
-[有翻页](../README.md#翻页)
+* [有翻页](../README.md#翻页)
+* 工程成员可访问
 
 ## URI
 
 ```
-/projects/:id/patches
+/projects/:project/patches
 ```
 
 ## 请求方式
@@ -24,7 +25,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| :id | string | 是 | 工程 ID |  |  |
+| :project | string | 是 | 工程 ID |  |  |
 
 ## 成功
 

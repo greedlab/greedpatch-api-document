@@ -1,9 +1,11 @@
 # 添加补丁
 
+工程成员可访问
+
 ## URI
 
 ```
-/patches
+/projects/:project/patches
 ```
 
 ## 请求方式
@@ -22,7 +24,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| bundle_id | string | 是 | 应用标识符 |  |  |
+| :project | string | 是 | 工程 ID |  |  |
 | client | string | 是 | 终端类型 |  |  |
 | app_version | string | 是 | 应用版本 |  |  |
 | patch_version | string | 否 | 当前补丁版本号 | 和 app_version 对应 |  |

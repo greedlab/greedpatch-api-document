@@ -5,7 +5,7 @@
 ## URI
 
 ```
-/users/my/profile
+/users/me/profile
 ```
 
 ## 请求方式

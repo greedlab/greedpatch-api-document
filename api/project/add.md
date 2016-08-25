@@ -1,5 +1,7 @@
 # 添加工程
 
+添加工程时，把自己做为管理员添加到 members
+
 ## URI
 
 ```
@@ -41,8 +43,8 @@ Authorization: Bearer <token>
 | id | string | 工程 ID |  |
 | bundle_id | string | 应用标识符 |  |  
 | name | string | 工程名称 |  |  
-| introduction | string | 工程介绍 |  | 
-| timestamp | int | 创建时间 |  |
+| introduction | string | 工程介绍 |  |
+| members | member array | 工程成员列表 | [详细说明](../../table/project.md#member) |  |
 
 ### 成功返回数据实例
 
@@ -52,7 +54,9 @@ Authorization: Bearer <token>
   "bundle_id": "FDSF32423",
   "name": "project name",
   "introduction": "project introduction",
-  "timestamp": 437281732
+  "members": [
+
+  ]
 }
 ```
 

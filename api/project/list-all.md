@@ -31,30 +31,26 @@ Authorization: Bearer <token>
 
 ### 成功返回数据
 
-| key | 类型 | 说明 | 备注 | 例子 |
-| --- | --- | --- | --- | --- |
-| id | string | 补丁 ID |  |  |
-| bundle_id | string | 应用标识符 |  |  |
-| client | string | 终端类型 |  |  |
-| app_version | string | 应用版本 |  |  |
-| patch_version | string | 最新补丁版本号 |  |  |
-| hash | string | 补丁 hash 值 |  |  |
-| patch_url | string | 补丁下载地址 |  |  |
-| timestamp | int | 创建时间 |  |  |
+| key | 类型 | 说明 | 备注 |
+| --- | --- | --- | --- |
+| id | string | 工程 ID |  |
+| bundle_id | string | 是 | 应用标识符 |  |  |
+| name | string | 工程名称 |  |
+| introduction | string | 工程介绍 |  |
+| members | member array | 工程成员列表 | [详细说明](../../table/project.md#member) |  |
 
-### 有补丁返回数据实例
+### 成功返回数据实例
 
 ```json
 [
   {
-    "id": "DSF565ew",
+    "id": "FDSF32423",
     "bundle_id": "com.greedlab.greedpatch",
-    "client": "ios",
-    "app_version": "1.0",
-    "patch_version": "1",
-    "hash": "FDSJFEIoidwiew12",
-    "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip",
-    "timestamp": 234137167
+    "name": "project name",
+    "Introduction": "project Introduction",
+    "members": [
+
+    ]
   }
 ]
 ```

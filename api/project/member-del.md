@@ -1,11 +1,12 @@
-# 删除工程
+# 删除成员
 
-管理员或者自己创建的工程可删除
+系统管理员或工程管理员可操作
+
 
 ## URI
 
 ```
-/projects/:id
+/projects/:project/members/:member
 ```
 
 ## 请求方式
@@ -24,7 +25,8 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| :id | string | 是 | 工程 ID |  |  |
+| :project | string | 是 | 工程 ID |  |  |
+| :member | string | 是 | 成员 ID |  |  |
 
 ## 成功
 

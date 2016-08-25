@@ -95,8 +95,8 @@ eg:
 
 | key | 说明 | 备注 |
 | --- | --- | --- |
-| iat | token 发布时间 | 单位/毫秒 |
-| exp | token 有效期 | 单位/毫秒 |
+| iat | token 发布时间 | 单位/秒 |
+| exp | token 有效期 | 单位/秒 |
 | id | 用户 ID | |
 | scope | token 权限 | [详细说明](#scope) |
 

@@ -1,5 +1,7 @@
 # 获取工程详情
 
+系统管理员或工程成员可访问
+
 ## URI
 
 ```
@@ -40,7 +42,7 @@ Authorization: Bearer <token>
 | bundle_id | string | 是 | 应用标识符 |  |  |
 | name | string | 工程名称 |  |
 | introduction | string | 工程介绍 |  |
-| timestamp | int | 创建时间 |  |
+| members | member array | 工程成员列表 | [详细说明](../../table/project.md#member) |  |
 
 ### 成功返回数据实例
 
@@ -50,7 +52,9 @@ Authorization: Bearer <token>
   "bundle_id": "com.greedlab.greedpatch",
   "name": "project name",
   "Introduction": "project Introduction",
-  "timestamp": 437281732
+  "members": [
+
+  ]
 }
 ```
 

@@ -5,7 +5,7 @@
 ## URI
 
 ```
-/permissions/:type
+/permissions/:id
 ```
 
 ## 请求方式
@@ -24,7 +24,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| :type | int | 是 | 权限类型 | [详细说明](../../table/permission.md#type) |  |
+| :id | string | 是 | 权限类型 | [详细说明](../../table/permission.md#id) |  |
 
 ## 成功
 
@@ -38,7 +38,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| type | int | 权限类型 | [详细说明](../../table/permission.md#type) |  0 |
+| id | string | 权限类型 | [详细说明](../../table/permission.md#id) |  0 |
 | permission | int | 权限 | [详细说明](../../table/permission.md#permission) | 0 |
 | domains | array | 限定的邮箱域名 | status=2 时有效 | [greedlab.com] |
 
@@ -46,7 +46,7 @@ Authorization: Bearer <token>
 
 ```json
 {
-  "type": 1,
+  "id": 0,
   "permission": 2,
   "domains": [
     "greedlab.com"

@@ -10,6 +10,12 @@
 | bundle_id | string | bundle id | unequal | com.greedlab.greedpatch |
 | name | string | 工程名 |  |  |
 | introduction | string | 介绍 |  |  |
-| timestamp | string | 添加时间戳 | 精确到秒 | 1471499261 |
-| owner_id | string | 工程所有者 ID |  |  |
-| members_id | array | 工程成员 ID 列表 |  | [EW23,RQWE4] |
+| members | member array | 工程成员列表 | [详细说明](#member) |  |
+
+### member
+
+| key | 类型 | 说明 | 备注 |
+| --- | --- | --- | --- |
+| id | string | 成员 ID |  |
+| email | string | 成员邮箱 |  |
+| role | string | 成员角色 | 0：工程管理员，1：工程普通成员 |

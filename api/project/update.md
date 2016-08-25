@@ -1,6 +1,6 @@
 # 更新工程
 
-只更新传了的参数
+只更新传了的参数。系统管理员或工程管理员可操作
 
 ## URI
 
@@ -24,7 +24,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| id | string | 是 | 工程 ID |  |  |
+| :id | string | 是 | 工程 ID |  |  |
 | name | string | 是 | 工程名称 |  |  |
 | introduction | string | 否 | 工程介绍 |  |  |
 

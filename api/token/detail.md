@@ -1,19 +1,17 @@
-# 列出用户 token
+# token 详情
 
-默认列出从设置界面生成 token
-
-* [有翻页](../README.md#翻页)
+需要用户密码。因为需要传密码，而且返回的也是敏感数据，所以用 POST
 
 ## URI
 
 ```
-/tokens
+/tokens/:id
 ```
 
 ## 请求方式
 
 ```
-GET
+POST
 ```
 
 ## 包头
@@ -26,8 +24,8 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
-| status | int | 否 | 状态 | 默认设 0 |
-| type | int | 否 | 类型 | 默认设 1 |
+| :id | string | 是 | token ID |  |
+| password | string | 是 | 用户密码 |  |
 
 ## 成功
 
@@ -35,7 +33,7 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 200 | 成功 |  |
+| 200 | 成功 | |
 
 ### 成功返回数据
 
@@ -51,16 +49,14 @@ Authorization: Bearer <token>
 ### 成功返回数据实例
 
 ```json
-[
-  {
-    "id": "FDSF32423",
-    "userid": "FDSF32423",
-    "name": "token name",
-    "token": "FDSK*2432.dsfi32.sdfaio32",
-    "status": 0,
-    "type": 1
-  }
-]
+{
+  "id": "FDSF32423",
+  "userid": "FDSF32423",
+  "name": "token name",
+  "token": "FDSK*2432.dsfi32.sdfaio32",
+  "status": 0,
+  "type": 1
+}
 ```
 
 ## 失败
@@ -69,8 +65,11 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
+| 400 | id/password 不能为空 |  |
 | 401 | token 失效 |  |
-| 500 | 服务器内部错误 |  |  
+| 403 | 密码错误 |  |
+| 422 | 无效id |  |
+| 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例
 
