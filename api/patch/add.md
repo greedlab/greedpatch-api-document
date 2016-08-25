@@ -1,6 +1,6 @@
 # 添加补丁
 
-工程成员可访问
+管理员或工程成员可访问
 
 ## URI
 
@@ -73,15 +73,16 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
+| 400 | project 不能为空 |  |
 | 401 | token 失效 |  |
-| 404 | bundle_id 不存在 |  |
-| 403 | 无权限访问 bundle_id |  |
+| 403 | 无权限 |  |
+| 422 | project 不存在 |  |
 | 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例
 
 ```json
 {
-  "message": "bundle_id 不存在"
+  "message": "token 失效"
 }
 ```

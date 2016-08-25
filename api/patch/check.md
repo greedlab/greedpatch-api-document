@@ -1,6 +1,6 @@
 # 检查是否有补丁
 
-工程成员可访问
+管理员或工程成员可访问
 
 ## URI
 
@@ -68,6 +68,7 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
+| 400 | bundle_id 不能为空 |  |
 | 401 | token 失效 |  |
 | 403 | 无权限访问 bundle_id |  |
 | 404 | bundle_id 不存在 |  |

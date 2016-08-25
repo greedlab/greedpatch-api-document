@@ -1,7 +1,7 @@
 # 获取工程下的补丁
 
 * [有翻页](../README.md#翻页)
-* 工程成员可访问
+* 管理员或工程成员可访问
 
 ## URI
 
@@ -51,18 +51,21 @@ Authorization: Bearer <token>
 ### 有补丁返回数据实例
 
 ```json
-[
-  {
-    "id": "DSF565ew",
-    "bundle_id": "com.greedlab.greedpatch",
-    "client": "ios",
-    "app_version": "1.0",
-    "patch_version": "1",
-    "hash": "FDSJFEIoidwiew12",
-    "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip",
-    "timestamp": 234137167
-  }
-]
+{
+  "patches": [
+    {
+      "id": "DSF565ew",
+      "bundle_id": "com.greedlab.greedpatch",
+      "client": "ios",
+      "app_version": "1.0",
+      "patch_version": "1",
+      "hash": "FDSJFEIoidwiew12",
+      "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip",
+      "timestamp": 234137167
+    }
+  ]
+}
+
 ```
 
 ## 失败
