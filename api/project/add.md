@@ -78,3 +78,9 @@ Authorization: Bearer <token>
   "message": "bundle_id 已存在"
 }
 ```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X POST -d '{"bundle_id": "com.greedlab.greedpatch", "name": "greedpatch", "introduction": "hot patch"}' localhost:4002/projects
+```

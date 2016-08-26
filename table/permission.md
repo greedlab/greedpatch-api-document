@@ -6,11 +6,11 @@
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| id | String | 权限类型 | [详细说明](#id) |  0 |
+| type | int | 权限类型 | [详细说明](#type) |  0 |
 | permission | int | 权限 | [详细说明](#permission) | 0 |
 | domains | array | 限定的邮箱域名 | status=2 时有效 | [greedlab.com] |
 
-### id
+### type
 
 | value | 说明 |
 | --- | --- |

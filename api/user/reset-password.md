@@ -59,3 +59,9 @@ POST
   "message": "邮箱格式错误"
 }
 ```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "test@greedlab.com"}' localhost:4002/reset-password
+```

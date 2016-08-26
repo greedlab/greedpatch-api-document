@@ -32,14 +32,19 @@ POST
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | token | string | 邮箱 |  |
-| role | int | 角色 | [详细说明](../../table/user.md#role) |
+| user | object | user 对象 | [详细说明](../../table/user.md) |
 
 ### 成功返回数据实例
 
 ```json
 {
   "token": "IFEI.rewqri.423jkdsf",
-  "role" : 0
+  "user" : {
+    "email":"test@greedlab.com",
+    "_id":"57bf9ba1ce84c999a0efd5b7",
+    "role":0,
+    "status":0
+  }
 }
 ```
 
@@ -59,4 +64,10 @@ POST
 {
   "message": "用户已存在"
 }
+```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "test@greedlab.com","password":"secretpasas"}' localhost:4002/register
 ```

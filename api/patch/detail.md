@@ -34,14 +34,13 @@ Authorization: Bearer <token>
 | --- | --- | --- |
 | 200 | 获取成功 | |
 
-#### 成功返回数据
+### 成功返回数据
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
 | id | string | 补丁 ID |  |  |
-| bundle_id | string | 应用标识符 |  |  |
-| client | string | 终端类型 |  |  |
-| app_version | string | 应用版本 |  |  |
+| project_id | string | 工程 ID |  |  |
+| project_version | string | 工程版本 |  |  |
 | patch_version | string | 最新补丁版本号 |  |  |
 | hash | string | 补丁 hash 值 |  |  |
 | patch_url | string | 补丁下载地址 |  |  |
@@ -51,9 +50,8 @@ Authorization: Bearer <token>
 ```json
 {
   "id": "DSF565ew",
-  "bundle_id": "com.greedlab.greedpatch",
-  "client": "ios",
-  "app_version": "1.0",
+  "project_id": "DSF565ew",
+  "project_version": "1.0",
   "patch_version": "1",
   "hash": "FDSJFEIoidwiew12",
   "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip"
@@ -77,4 +75,10 @@ Authorization: Bearer <token>
 {
   "message": "补丁不存在"
 }
+```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X GET localhost:4002/patches/57bff6d74bf68967a8bb1b0f
 ```

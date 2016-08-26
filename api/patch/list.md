@@ -40,32 +40,25 @@ Authorization: Bearer <token>
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
 | id | string | 补丁 ID |  |  |
-| bundle_id | string | 应用标识符 |  |  |
-| client | string | 终端类型 |  |  |
-| app_version | string | 应用版本 |  |  |
+| project_id | string | 工程 ID |  |  |
+| project_version | string | 工程版本 |  |  |
 | patch_version | string | 最新补丁版本号 |  |  |
 | hash | string | 补丁 hash 值 |  |  |
 | patch_url | string | 补丁下载地址 |  |  |
-| timestamp | int | 创建时间 |  |  |
 
-### 有补丁返回数据实例
+### 成功返回数据实例
 
 ```json
-{
-  "patches": [
-    {
-      "id": "DSF565ew",
-      "bundle_id": "com.greedlab.greedpatch",
-      "client": "ios",
-      "app_version": "1.0",
-      "patch_version": "1",
-      "hash": "FDSJFEIoidwiew12",
-      "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip",
-      "timestamp": 234137167
-    }
-  ]
-}
-
+[
+  {
+    "id": "DSF565ew",
+    "project_id": "DSF565ew",
+    "project_version": "1.0",
+    "patch_version": "1",
+    "hash": "FDSJFEIoidwiew12",
+    "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip"
+  }
+]
 ```
 
 ## 失败
@@ -85,4 +78,10 @@ Authorization: Bearer <token>
 {
   "message": "工程不存在"
 }
+```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X GET localhost:4002/projects/57bfebadd2dbc1cea6430f8b/patches
 ```

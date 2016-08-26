@@ -6,7 +6,7 @@
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| id | string | ID | Mongo的 BSON ID 包含了 timestamp |  |
+| _id | string | ID | Mongo的 BSON ID 包含了 timestamp |  |
 | email | string | 邮箱 |  | greedpatch@greedlab.com |
 | password | string | 密码 | 加密后的 |  |
 | status | int | 状态 | [详细说明](#status) | 0 |

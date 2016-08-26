@@ -6,7 +6,7 @@
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| id | string | ID |  |  |
+| _id | string | ID |  |  |
 | name | string | 名称 | type 为 1 时才有 |  |
 | userid | string | 用户 ID |  |  |
 | token | string | token |  |  |

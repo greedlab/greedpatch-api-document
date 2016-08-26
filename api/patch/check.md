@@ -11,7 +11,7 @@
 ## 请求方式
 
 ```
-GET
+POST
 ```
 
 ## 包头
@@ -24,10 +24,9 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
-| bundle_id | string | 是 | 应用标识符 |  |  |
-| client | string | 是 | 终端类型 |  |  |
-| app_version | string | 是 | 应用版本 |  |  |
-| patch_version | string | 否 | 当前补丁版本号 | 和 app_version 对应 |  |
+| project_id | string | 是 | 工程 ID |  |  |
+| project_version | string | 是 | 工程版本 |  |  |
+| patch_version | string | 否 | 当前补丁版本号 | 和 project_version 对应 |  |
 
 ## 成功
 
@@ -38,24 +37,24 @@ Authorization: Bearer <token>
 | 200 | 有补丁 | 有数据返回 |
 | 204 | 无补丁 | 不返回任何数据 |
 
-### 有补丁返回数据
+### 成功返回数据
 
 | key | 类型 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- |
-| bundle_id | string | 应用标识符 |  |  |
-| client | string | 终端类型 |  |  |
-| app_version | string | 应用版本 |  |  |
+| id | string | 补丁 ID |  |  |
+| project_id | string | 工程 ID |  |  |
+| project_version | string | 工程版本 |  |  |
 | patch_version | string | 最新补丁版本号 |  |  |
 | hash | string | 补丁 hash 值 |  |  |
 | patch_url | string | 补丁下载地址 |  |  |
 
-### 有补丁返回数据实例
+### 成功返回数据实例
 
 ```json
 {
-  "bundle_id": "com.greedlab.greedpatch",
-  "client": "ios",
-  "app_version": "1.0",
+  "id": "DSF565ew",
+  "project_id": "DSF565ew",
+  "project_version": "1.0",
   "patch_version": "1",
   "hash": "FDSJFEIoidwiew12",
   "patch_url": "http://www.greedpatch.greedlab.com/patch/XXXXXX.zip"
@@ -80,4 +79,10 @@ Authorization: Bearer <token>
 {
   "message": "bundle_id 不存在"
 }
+```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X POST -d '{"project_id":"57bfebadd2dbc1cea6430f8b","project_version":"1.0"}' localhost:4002/patches/check
 ```
