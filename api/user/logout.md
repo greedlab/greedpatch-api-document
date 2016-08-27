@@ -45,3 +45,9 @@ Authorization: Bearer <token>
   "message": "token 格式错误"
 }
 ```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json"  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIyOTQyNDEyMjYsImV4cCI6MTQ3NDg4NjI0MTIyNiwiaWQiOiI1N2MxNmIyMGI5MDdmMTk5YmZiZGQ1NjIiLCJzY29wZSI6ImRlZmF1bHQifQ.NQlByolepxftXqZNRtY4c2n8u1seZ9QRKRIS6M0KN4I" -X POST localhost:4002/logout
+```

@@ -48,5 +48,5 @@ Authorization: Bearer <token>
 ## example
 
 ```
-curl -H "Accept: application/vnd.greedlab+json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X GET localhost:4002/users/me/profile
+curl -H "Accept: application/vnd.greedlab+json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIyOTQ4NDI3NjIsImV4cCI6MTQ3NDg4Njg0Mjc2MiwiaWQiOiI1N2MxNmIyMGI5MDdmMTk5YmZiZGQ1NjIiLCJzY29wZSI6ImRlZmF1bHQifQ.vayskdpIzjNBMLijmBDuL2UxkxahYnS3F_fznEpcuW4" -X GET localhost:4002/users/me/profile
 ```

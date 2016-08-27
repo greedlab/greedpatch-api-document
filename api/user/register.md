@@ -69,5 +69,5 @@ POST
 ## example
 
 ```
-curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "test@greedlab.com","password":"secretpasas"}' localhost:4002/register
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "bell@greedlab.com","password":"secretpasas"}' localhost:4002/register
 ```

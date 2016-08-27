@@ -11,6 +11,7 @@
 | password | string | 密码 | 加密后的 |  |
 | status | int | 状态 | [详细说明](#status) | 0 |
 | role | int | 角色 | [详细说明](#role) | 0 |
+| validTokenTimestamp | int | 有效的 token 生成时间 | 只有 token 的生成时间大于或等于该值，token 才有效 | 0 |
 
 ### status
 

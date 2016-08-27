@@ -24,6 +24,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
+| token | string | 是 | 修改密码的 token |  |  |
 | password | string | 是 | 新密码 | 未加密 |  |
 
 ## 成功
@@ -58,14 +59,13 @@ Authorization: Bearer <token>
 
 | 状态码 | 状态信息 | 说明 | 备注 |
 | --- | --- | --- | --- |
-| 401 | token 失效 |  |  |
-| 403 | token 权限不够 |  |  |
+| 403 | 无效 token |  |  |
 | 500 | 服务器内部错误 |  |  |
 
 ### 出错返回数据实例
 
 ```json
 {
-  "message": "token 失效"
+  "message": "无效 token"
 }
 ```

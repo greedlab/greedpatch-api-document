@@ -1,6 +1,6 @@
 # 重置自己的密码
 
-发送重置密码链接到邮箱。后端生成新的 token，重置密码链接为 `<front >/set-password?token=<token>`
+发送重置密码链接到邮箱。后端生成新的 token，重置密码链接为 `<front address>/set-password/<token>`
 
 ## URI
 
@@ -63,5 +63,5 @@ POST
 ## example
 
 ```
-curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "test@greedlab.com"}' localhost:4002/reset-password
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"email": "bell@greedlab.com"}' localhost:4002/reset-password
 ```
