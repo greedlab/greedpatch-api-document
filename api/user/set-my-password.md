@@ -69,3 +69,9 @@ Authorization: Bearer <token>
   "message": "无效 token"
 }
 ```
+
+## example
+
+```
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{"token": "57c3a6d88efc1b7fdbf2bec9","password": "new_password_1"}' localhost:4002/set-my-password
+```

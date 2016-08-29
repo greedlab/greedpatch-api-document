@@ -44,10 +44,10 @@ Accept: application/vnd.greedlab+json;version=1.0
 
 ### User-Agent
 
-包含`应用标识符`、`终端`、`版本`。不传返回 `403 Forbidden`
+客户端传 `应用标识符`、`终端`、`版本`，网页用默认的。不传返回 `403 Forbidden`
 
 ```
-User-Agent: <boundle id>/<client>/<version>
+User-Agent: <bundle id>/<client>/<version>
 ```
 
 | key | 说明 | 备注
@@ -196,3 +196,30 @@ eg:
 
 * [parse-link-header](https://github.com/thlorenz/parse-link-header) 解析 `Web Linking`
 * [format-link-header](https://github.com/jonathansamines/format-link-header) 生成 `Web Linking`
+
+## Errors
+
+* 参考 <https://developer.github.com/v3/#client-errors>
+
+```
+HTTP/1.1 422 Unprocessable Entity
+Content-Length: 149
+
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "Issue",
+      "field": "title",
+      "code": "missing_field"
+    }
+  ]
+}
+```
+
+| Error Name | Description |
+| --- | --- |
+| missing | This means a resource does not exist. |
+| missing_field | This means a required field on a resource has not been set. |
+| invalid | This means the formatting of a field is invalid. The documentation for that resource should be able to give you more specific information. |
+| already_exists | This means another resource has the same value as this field. This can happen in resources that must have some unique key (such as Label names). |
