@@ -54,15 +54,21 @@ POST
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 400 | 邮箱或密码格式错误 |  |
-| 422 | 邮箱已存在 |  |
+| 422 | 邮箱/密码格式错误/邮箱已存在 |  |
 | 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例
 
 ```json
 {
-  "message": "用户已存在"
+  "message": "User is existed",
+  "errors": [
+    {
+      "resource": "User",
+      "field": "email",
+      "code": "already_exists"
+    }
+  ]
 }
 ```
 

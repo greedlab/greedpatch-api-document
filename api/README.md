@@ -201,6 +201,17 @@ eg:
 
 * 参考 <https://developer.github.com/v3/#client-errors>
 
+JSON 解析错误
+
+```
+HTTP/1.1 400 Bad Request
+Content-Length: 35
+
+{"message":"Problems parsing JSON"}
+```
+
+参数错误
+
 ```
 HTTP/1.1 422 Unprocessable Entity
 Content-Length: 149

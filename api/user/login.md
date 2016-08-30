@@ -56,13 +56,31 @@ POST
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
 | 401 | 用户名或密码错误 |  |
+| 422 | 用户名或密码不能为空 |  |
 | 500 | 服务器内部错误 |  |
 
 ### 出错返回数据实例
 
+401
+
 ```json
 {
-  "message": "用户名或密码错误"
+  "message": "Email or password error"
+}
+```
+
+422
+
+```json
+{
+  "message": "Email is empty",
+  "errors": [
+    {
+      "resource": "User",
+      "field": "email",
+      "code": "missing_field"
+    }
+  ]
 }
 ```
 
@@ -70,4 +88,6 @@ POST
 
 ```
 curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{ "email": "test3@greedlab.com", "password": "secretpasas" }' localhost:4002/login
+
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -X POST -d '{ "email": "test3@greedlab.com", "password": "new_password" }' localhost:4002/login
 ```
