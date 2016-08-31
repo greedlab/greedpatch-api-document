@@ -14,4 +14,4 @@
 | error | 错误提示 |  |
 | email | 邮箱 |  |
 | email_error | 邮箱错误提示 |  |
-| email_autofocus | 光标聚焦在邮箱 | autofocus 或者 空 |
+| email_autofocus | 光标聚焦 | autofocus 或者 空 |

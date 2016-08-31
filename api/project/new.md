@@ -66,9 +66,8 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 400 | bundle_id/name 不能为空 |  |
 | 401 | token 失效 |  |  
-| 422 | bundle_id 已存在 |  |  
+| 422 | name 不能为空 |  |  
 | 500 | 服务器内部错误 |  |  
 
 ### 失败返回数据实例

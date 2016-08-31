@@ -5,7 +5,7 @@
 ## URI
 
 ```
-/set-my-password
+/set-password
 ```
 
 ## 请求方式
