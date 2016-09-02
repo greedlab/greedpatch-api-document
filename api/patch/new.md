@@ -1,4 +1,4 @@
-# 添加补丁
+# 创建补丁
 
 管理员或工程成员可访问
 
@@ -25,7 +25,6 @@ Authorization: Bearer <token>
 | key | 类型 | 是否必须 | 说明 | 备注 | 例子 |
 | --- | --- | --- | --- | --- | --- |
 | :project | string | 是 | 工程 ID |  |  |
-| client | string | 是 | 终端类型 |  |  |
 | project_version | string | 是 | 工程版本 |  |  |
 | patch_version | string | 是 | 当前补丁版本号 | 和 app_version 对应 |  |
 | hash | string | 是 | 补丁 hash 值 |  |  |
@@ -69,10 +68,9 @@ Authorization: Bearer <token>
 
 | 状态码 | 说明 | 备注 |
 | --- | --- | --- |
-| 400 | project 不能为空 |  |
 | 401 | token 失效 |  |
 | 403 | 无权限 |  |
-| 422 | project 不存在 |  |
+| 422 | project_id/project_version/patch_version/patch_url/ 不能为空/project 不存在 |  |
 | 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例

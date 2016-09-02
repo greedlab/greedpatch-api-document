@@ -38,7 +38,7 @@ Authorization: Bearer <token>
 
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
-| id | string | 工程 ID |  |
+| _id | string | 工程 ID |  |
 | bundle_id | string | 是 | 应用标识符 |  |  |
 | name | string | 工程名称 |  |
 | introduction | string | 工程介绍 |  |
@@ -48,10 +48,10 @@ Authorization: Bearer <token>
 
 ```json
 {
-  "id": "FDSF32423",
+  "_id": "FDSF32423",
   "bundle_id": "com.greedlab.greedpatch",
   "name": "project name",
-  "Introduction": "project Introduction",
+  "introduction": "project Introduction",
   "members": [
 
   ]

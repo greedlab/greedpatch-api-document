@@ -181,22 +181,6 @@ eg:
 | 500 | Internal Server Error | [*] | 服务器发生错误 | 用户将无法判断发出的请求是否成功 |
 | 503 | Service Unavailable | [*] | 由于临时的服务器维护或者过载，服务器当前无法处理请求 |
 
-## 翻页
-
-### 请求参数
-
-| key | 类型 | 说明 | 备注 |
-| --- | --- | --- | --- |
-| page | int | 当前页数 | 默认 0 |
-| per_page | int |  每页数量 | 默认 20 |
-
-### 返回数据
-
-使用 [Web Linking](https://tools.ietf.org/html/rfc5988) 表示翻页
-
-* [parse-link-header](https://github.com/thlorenz/parse-link-header) 解析 `Web Linking`
-* [format-link-header](https://github.com/jonathansamines/format-link-header) 生成 `Web Linking`
-
 ## Errors
 
 * 参考 <https://developer.github.com/v3/#client-errors>
@@ -234,3 +218,22 @@ Content-Length: 149
 | missing_field | This means a required field on a resource has not been set. |
 | invalid | This means the formatting of a field is invalid. The documentation for that resource should be able to give you more specific information. |
 | already_exists | This means another resource has the same value as this field. This can happen in resources that must have some unique key (such as Label names). |
+
+
+## 翻页
+
+### 请求参数
+
+| key | 类型 | 说明 | 备注 |
+| --- | --- | --- | --- |
+| page | int | 当前页数 | 默认 0 |
+| per_page | int |  每页数量 | 默认 20 |
+
+### 返回数据
+
+参考 <https://developer.github.com/v3/#link-header>
+
+使用 [Web Linking](https://tools.ietf.org/html/rfc5988) 表示翻页
+
+* [parse-link-header](https://github.com/thlorenz/parse-link-header) 解析 `Web Linking`
+* [format-link-header](https://github.com/jonathansamines/format-link-header) 生成 `Web Linking`
