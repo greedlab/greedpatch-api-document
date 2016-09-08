@@ -24,7 +24,8 @@ Authorization: Bearer <token>
 
 | key | 类型 | 是否必须 | 说明 | 备注 |
 | --- | --- | --- | --- | --- |
-| name | string | 名称 | 是 |  |
+| password | string | 是 | 密码 |  |
+| name | string | 是 | 名称 |  |
 
 ## 成功
 
