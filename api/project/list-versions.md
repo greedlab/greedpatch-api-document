@@ -32,14 +32,33 @@ Authorization: Bearer <token>
 | key | 类型 | 说明 | 备注 |
 | --- | --- | --- | --- |
 | id | string | 工程 ID |  |
-| versions | array | 版本号列表 | 应用标识符 |
+| versions | version array | 版本列表 |  |
+
+#### version
+
+| key | 类型 | 说明 | 备注 |
+| --- | --- | --- | --- |
+| _id | string | 工程版本号 |  |
+| project_name | string | 工程名 |
+| patch_version | int | 最大补丁版本号 |  |
+
 
 ### 成功返回数据实例
 
 ```json
 {
   "id": "FDSF32423",
-  "versions": ["1.0", "1.1"]
+  "project_name": "project name",
+  "versions": [
+    {
+      "_id": "1.0",
+      "patch_version": 1
+    },
+    {
+      "_id": "1.1",
+      "patch_version": 2
+    }
+  ]
 }
 ```
 

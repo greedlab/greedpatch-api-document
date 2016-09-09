@@ -2,6 +2,8 @@
 
 管理员或工程成员可访问
 
+patch_version 自动加 1
+
 ## URI
 
 ```
@@ -26,7 +28,6 @@ Authorization: Bearer <token>
 | --- | --- | --- | --- | --- | --- |
 | :project | string | 是 | 工程 ID |  |  |
 | project_version | string | 是 | 工程版本 |  |  |
-| patch_version | string | 是 | 当前补丁版本号 | 和 app_version 对应 |  |
 | hash | string | 是 | 补丁 hash 值 |  |  |
 | patch_url | string | 是 | 补丁下载地址 |  |  |
 
@@ -70,7 +71,7 @@ Authorization: Bearer <token>
 | --- | --- | --- |
 | 401 | token 失效 |  |
 | 403 | 无权限 |  |
-| 422 | project_id/project_version/patch_version/patch_url/ 不能为空/project 不存在 |  |
+| 422 | project_id/project_version/patch_url/ 不能为空/project 不存在 |  |
 | 500 | 服务器内部错误 |  |
 
 ### 失败返回数据实例
@@ -84,5 +85,5 @@ Authorization: Bearer <token>
 ## example
 
 ```
-curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X POST -d '{"project_version": "1.0","patch_version": "1", "hash":"hash","patch_url":"patch_url"}' localhost:4002/projects/57bfebadd2dbc1cea6430f8b/patches
+curl -H "Accept: application/vnd.greedlab+json" -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0NzIxODEyMzUxMzksImV4cCI6MTQ3NDc3MzIzNTEzOSwiaWQiOiI1N2JmOWJhMWNlODRjOTk5YTBlZmQ1YjciLCJzY29wZSI6ImRlZmF1bHQifQ.ESm0koiqDc8nfRTiHp4Uwo7PKNCtPRU5dfVfLT6MUSk" -X POST -d '{"project_version": "1.0", "hash":"hash","patch_url":"patch_url"}' localhost:4002/projects/57bfebadd2dbc1cea6430f8b/patches
 ```
