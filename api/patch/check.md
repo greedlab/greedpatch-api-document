@@ -1,6 +1,9 @@
 # 检查是否有补丁
 
-管理员或工程成员可访问
+管理员或工程成员可访问.
+
+* `project_id` 通过后台管理界面工程详情查看
+* `token` 通过 [Access Tokens 管理界面](http://patch.greedlab.com/settings/my/tokens) 得到
 
 ## URI
 
