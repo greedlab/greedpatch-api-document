@@ -40,7 +40,7 @@ Authorization: Bearer <token>
 | --- | --- | --- | --- | --- |
 | type | int | 权限类型 | [详细说明](../../table/permission.md#type) |  0 |
 | permission | int | 权限 | [详细说明](../../table/permission.md#permission) | 0 |
-| domains | array | 限定的邮箱域名 | status=2 时有效 | [greedlab.com] |
+| domains | string | 限定的邮箱域名 | status=2 时有效,以逗号或空格隔开 | greedlab.com,example.com |
 
 ### 成功返回数据实例
 
@@ -48,9 +48,7 @@ Authorization: Bearer <token>
 {
   "type": 0,
   "permission": 2,
-  "domains": [
-    "greedlab.com"
-  ]
+  "domains": "greedlab.com,example.com"
 }
 ```
 

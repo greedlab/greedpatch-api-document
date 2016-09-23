@@ -43,17 +43,15 @@ Authorization: Bearer <token>
 ### 成功返回数据实例
 
 ```json
-{
-  "users": [
-    {
-      "id": "FDSF32423",
-      "email": "user1@greedlab.com",
-      "token": "FDSK*2432.dsfi32.sdfaio32",
-      "type": 1,
-      "timestamp": 437281732
-    }
-  ]
-}
+[
+  {
+    "_id": "FDSF32423",
+    "email": "user1@greedlab.com",
+    "role": 0,
+    "status": 0,
+    "timestamp": 437281732
+  }
+]
 ```
 
 ## 失败
